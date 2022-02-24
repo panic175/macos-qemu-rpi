@@ -2,8 +2,8 @@
 
 set -euxo pipefail
 
-readonly IMAGE='2021-10-30-raspios-bullseye-armhf-lite'
-readonly KERNEL='kernel8.img'
+source config.sh
+
 readonly DTB='bcm2710-rpi-3-b-plus.dtb'
 
 readonly TMP_DIR="${HOME}/qemu_vms_native"
